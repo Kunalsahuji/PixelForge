@@ -1,9 +1,14 @@
 
 # 🚀 PixelForge Agency - Creative Digital Web Agency
 
-![Website Preview](https://drive.google.com/uc?export=view&id=1IHH37vxeQEzhHZ4kxZL7bG1iSz1B64pf)
+[![Preview Website](https://drive.google.com/uc?export=view&id=1nojduhHTTyFI6goEcY0KEIIybeM7uFt-)](https://drive.google.com/file/d/1nojduhHTTyFI6goEcY0KEIIybeM7uFt-/view)
 
-**Live Site**: [Click Here to Visit](https://kunalsahuji.github.io/photography-website/)
+---
+
+🌐 **Live Site**: (https://kunalsahuji.github.io/PixelForge/
+)
+
+
 
 ## 🧠 About the Project
 
@@ -46,26 +51,39 @@ PixelForge Agency is a modern and responsive creative agency website built with 
 
 ---
 
-## 📸 Screenshots
-
-### 💻 Desktop View
-![Desktop Screenshot](https://drive.google.com/uc?export=view&id=1IHH37vxeQEzhHZ4kxZL7bG1iSz1B64pf)
-
-### 📱 Mobile View
-*(Open on mobile or use browser dev tools to preview)*
-
----
 
 ## 🔗 Links
 
-- 🔴Live Preview: [https://kunalsahuji.github.io/photography-website/](https://kunalsahuji.github.io/photography-website/)
+- 🔴Live Preview: [https://kunalsahuji.github.io/PixelForge/](https://kunalsahuji.github.io/PixelForge/
+)
+
 - 📦 GitHub: [github.com/Kunalsahuji](https://github.com/Kunalsahuji/kunal-sahu)
 - 🔗 LinkedIn: [linkedin.com/in/kunal-sahu-7688ba1b0](https://www.linkedin.com/in/kunal-sahu-7688ba1b0)
 - 📌 Notion: [Watch my content](https://www.notion.so/1dff7c6ce1bb803787fbddd34e422ab4?v=1e0f7c6ce1bb8052b14c000cb57448ee&pvs=4)
 - 📧 Email: [ksahu0103@gmail.com](mailto:ksahu0103@gmail.com)
 
 ---
+## 🖼️ Project Preview 
 
+### 💻 Desktop View
+
+#### 🔹 Hero Section  
+[![Desktop Hero](https://drive.google.com/uc?export=view&id=1nojduhHTTyFI6goEcY0KEIIybeM7uFt-)](https://drive.google.com/file/d/1nojduhHTTyFI6goEcY0KEIIybeM7uFt-/view)
+
+#### 🔹 About Us  
+[![Desktop About](https://drive.google.com/uc?export=view&id=1TpUkaBDm5t-1QV0MyAK859fvLXTtdXTf)](https://drive.google.com/file/d/1TpUkaBDm5t-1QV0MyAK859fvLXTtdXTf/view)
+
+---
+
+### 📱 Mobile View
+
+#### 🔹 Hero Section  
+[![Mobile Hero](https://drive.google.com/uc?export=view&id=15rBv2CGoSRUVc5C5esj78uj3BBO3YBXc)](https://drive.google.com/file/d/15rBv2CGoSRUVc5C5esj78uj3BBO3YBXc/view)
+
+#### 🔹 About Us  
+[![Mobile About](https://drive.google.com/uc?export=view&id=1SMJZLWKFZ5ExY-7w7HrEi2-bkMfyYcj7)](https://drive.google.com/file/d/1SMJZLWKFZ5ExY-7w7HrEi2-bkMfyYcj7/view)
+
+---
 ## 🙌 Acknowledgements
 
 Thanks to [Unsplash](https://unsplash.com/) for high-quality illustrations and images.  
