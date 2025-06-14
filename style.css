@@ -1,0 +1,538 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  transition: background 0.4s, color 0.4s;
+}
+
+.light-theme {
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+.dark-theme {
+  background-color: #121212;
+  color: #e4e4e4;
+}
+
+.container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--nav-bg, #fff);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-left a {
+  text-decoration: none;
+  font-weight: bold;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.nav-left a:hover {
+  color: #007bff;
+}
+
+.nav-right button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.nav-right-first-btn {
+  background: #00c897;
+  color: #fff;
+}
+
+.nav-right-second-btn {
+  background: #6c63ff;
+  color: #fff;
+}
+
+.nav-right-first-btn:hover {
+  background: #00b487;
+}
+
+.nav-right-second-btn:hover {
+  background: #4e47db;
+}
+
+.theme-toggle {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.dark-theme .theme-toggle {
+  background: #333;
+  color: #f0f0f0;
+}
+
+/* Animated Loader */
+.wavily {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.wavily span {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #6c63ff;
+  animation: wave 1s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+.dark-theme .wavily span {
+  color: #03dac6;
+}
+
+@keyframes wave {
+
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+
+  20% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 8rem;
+  gap: 2rem;
+  background: linear-gradient(to right, #eee, #fff);
+}
+
+.dark-theme .hero {
+  background: linear-gradient(to right, #1c1c1c, #2a2a2a);
+}
+
+.left-content {
+  flex: 2 2 35%;
+}
+
+.left-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.left-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background: #007bff;
+  color: white;
+  padding: 0.8rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #0056b3;
+}
+
+.right-content {
+  flex: 1 1 35%;
+  min-height: 400px;
+  background-image: url('https://plus.unsplash.com/premium_vector-1714618908475-fad7365d7468?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGlubm92YXRpb258ZW58MHx8MHx8fDA%3D');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.right-content:hover {
+  transform: scale(1.02);
+}
+
+/* About Section */
+.about-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.about-features {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.feature {
+  max-width: 400px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.dark-theme .feature {
+  background: #1f1f1f;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+}
+
+.feature img {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+/* Services Section */
+.services-section {
+  padding: 4rem 2rem;
+  background: #f4f4f4;
+  text-align: center;
+
+}
+
+.dark-theme .services-section {
+  background: #181818;
+}
+
+.services-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  background: white;
+  color: #333;
+  text-align: center;
+  max-width: 400px;
+  padding: 2rem 4rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.dark-theme .card {
+  background: #222;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  margin-bottom: 0.8rem;
+  color: inherit;
+}
+
+.card p {
+  color: inherit;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-section form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.contact-section button {
+  background: #00b894;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-section button:hover {
+  background: #019879;
+}
+
+/* Footer */
+footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: #ddd;
+  color: #444;
+}
+
+.dark-theme footer {
+  background-color: #1c1c1c;
+  color: #bbb;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .nav-left,
+  .nav-right {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .nav-left{
+    color: #333;
+    flex: 2 2 100%;
+    font: 1em sans-serif;
+  }
+  .nav-left a{
+    font-size: 0.9rem;
+  }
+  .nav-left a:hover {
+    color: #007bff;
+    text-decoration: underline;
+  }
+
+
+  .hero {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .left-content {
+    width: 100%;
+    text-align: center;
+  }
+  .left-content h1 {
+    font-size: 2rem;
+  }
+  .left-content p {
+    font-size: 1rem;
+  }
+  .cta-button {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 1rem;
+  }
+  .right-content {
+    width: 100%;
+    min-height: 300px;
+    background-image: url('https://plus.unsplash.com/premium_vector-1714618908475-fad7365d7468?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGlubm92YXRpb258ZW58MHx8MHx8fDA%3D');
+  }
+  .about-section {
+    padding: 2rem 1rem;
+  }
+  .about-section h2 {
+    font-size: 2rem;
+  }
+  .about-section p {
+    font-size: 1rem;
+  }
+  .about-features {
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature {
+    max-width: 90%;
+    margin-bottom: 1.5rem;
+  }
+  .feature img {
+    width: 80px;
+  }
+  .services-section {
+    padding: 2rem 1rem;
+  }
+  .services-section h2 {
+    font-size: 2rem;
+  }
+  .service-cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
+  .card {
+    padding: 1.5rem;
+  }
+  .card h3 {
+    font-size: 1.5rem;
+  }
+  .card p {
+    font-size: 1rem;
+  }
+  .contact-section {
+    padding: 2rem 1rem;
+  }
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+  .contact-section form {
+    width: 100%;
+  }
+  .contact-section input,
+  .contact-section textarea {
+    width: 100%;
+  }
+  .contact-section button {
+    width: 100%;
+    padding: 0.6rem;
+  }
+  footer {
+    padding: 1rem 0.5rem;
+  }
+  footer p {
+    font-size: 0.9rem;
+  }
+  .nav-right {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-right button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .nav-right-first-btn,
+  .nav-right-second-btn {
+    width: 100%;
+    text-align: center;
+  }
+  .nav-right-first-btn {
+    margin-bottom: 0.5rem;
+  }
+  .nav-right-second-btn {
+    margin-bottom: 0;
+  }
+  .theme-toggle {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  .theme-toggle:hover {
+    background: #e0e0e0;
+  }
+  .theme-toggle.dark-theme {
+    background: #444;
+    color: #f0f0f0;
+  }
+  .theme-toggle.dark-theme:hover {
+    background: #555;
+  }
+  /* on dark theme on services section change color white and background dark */
+  .dark-theme .services-section {
+    background: #121212;
+      color: #e4e4e4;
+
+  }
+  .dark-theme .service-cards {
+    background: #1f1f1f;
+  }
+  .dark-theme .card {
+    background: #2a2a2a;
+    color: #e4e4e4;
+  }
+  .dark-theme .card:hover {
+    background: #333;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  .dark-theme .card h3 {
+    color: #fff;
+  }
+  .wavily {
+    margin: 1rem 0;
+  }
+  .wavily span {
+    font-size: 1.5rem;
+  }
+  .wavily span:nth-child(1) {
+    --i: 0;
+  }
+  .wavily span:nth-child(2) {
+    --i: 1;
+  }
+
+  .about-features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .service-cards .card p {
+    font-size: 0.9rem;
+    width: 100%;
+    text-align: center;
+  }
+
+}

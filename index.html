@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixelForge Agency</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-theme');
+    }
+  </script>
+</head>
+
+<body class="light-theme">
+  <div class="container">
+
+    <!-- Navigation Bar (Responsive) -->
+    <nav>
+      <div class="nav-left">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-right">
+        <button class="nav-right-first-btn">Sign In</button>
+        <button class="nav-right-second-btn">Sign Out</button>
+        <button onclick="toggleTheme()" class="theme-toggle">🌙</button>
+      </div>
+    </nav>
+
+    <!-- Animated Loader (Below Nav) -->
+    <div class="wavily">
+      <span style="--i: 1">P</span>
+      <span style="--i: 2">i</span>
+      <span style="--i: 3">x</span>
+      <span style="--i: 4">e</span>
+      <span style="--i: 5">l</span>
+      <span style="--i: 6">F</span>
+      <span style="--i: 7">o</span>
+      <span style="--i: 8">r</span>
+      <span style="--i: 9">g</span>
+      <span style="--i: 10">e</span>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="left-content">
+        <h1>Creative Digital Agency</h1>
+        <p>We design modern websites, build scalable brands, and create memorable digital experiences for startups and businesses.</p>
+        <a href="#services"><button class="cta-button">Explore Services</button></a>
+      </div>
+      <div class="right-content">
+        <!-- Hero Background is styled via CSS -->
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <h2>About Us</h2>
+      <p>PixelForge is a digital design agency committed to crafting beautiful and functional websites that empower businesses to thrive online.</p>
+      <div class="about-features">
+        <div class="feature">
+          <img src="https://plus.unsplash.com/premium_vector-1682310918818-6e9a96a3ca2e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D" alt="Innovation">
+          <h3>Innovation</h3>
+          <p>We blend creativity and strategy to deliver breakthrough design and branding.</p>
+        </div>
+        <div class="feature">
+          <img src="https://plus.unsplash.com/premium_vector-1682310920702-50669014da8f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaG5vbG9neXxlbnwwfHwwfHx8MA%3D%3D" alt="Tech">
+          <h3>Technology</h3>
+          <p>Cutting-edge tools and modern stacks power our responsive digital solutions.</p>
+        </div>
+        <div class="feature">
+          <img src="https://plus.unsplash.com/premium_vector-1682310922955-ea5e6f791471?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGdyb3d0aHxlbnwwfHwwfHx8MA%3D%3D" alt="Growth">
+          <h3>Growth</h3>
+          <p>We partner with clients to scale their business through impactful digital presence.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <div class="card">
+          <h3>Web Design</h3>
+          <p>Responsive, user-centric website design to showcase your brand identity.</p>
+        </div>
+        <div class="card">
+          <h3>Branding</h3>
+          <p>Complete brand strategies from logos to color palettes and typography.</p>
+        </div>
+        <div class="card">
+          <h3>UI/UX</h3>
+          <p>Intuitive interfaces that deliver seamless user experiences across all devices.</p>
+        </div>
+        <div class="card">
+          <h3>SEO Optimization</h3>
+          <p>Improve search visibility and reach your target audience organically.</p>
+        </div>
+        <div class="card">
+          <h3>App Prototyping</h3>
+          <p>Rapid design prototypes to visualize and test your product concepts.</p>
+        </div>
+        <div class="card">
+          <h3>Maintenance</h3>
+          <p>Reliable support and continuous updates to keep your website fresh.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 PixelForge Agency. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+
+</html>
